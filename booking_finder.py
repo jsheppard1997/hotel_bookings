@@ -58,10 +58,13 @@ final_df = bookings_df.loc[final_df_mask]
 
 final_df.to_csv("bookings_" + str(date.date()) + ".csv", index=False)
 
+print("A bookings dataframe for " + str(date.date()) + " has been saved as bookings_" + str(date.date()) + ".csv")
+
 total_df = final_df[['adults', 'children', 'babies']].sum(axis=0) 
 
-final_df.to_csv("total_adults_children_babies_" + str(date.date()) + ".csv", index=False)
+total_df.to_csv("total_adults_children_babies_" + str(date.date()) + ".csv", index=False)
 
+print("A guest dataframe for " + str(date.date()) + " has been saved as total_adults_children_babies_" + str(date.date()) + ".csv")
 
 
 
