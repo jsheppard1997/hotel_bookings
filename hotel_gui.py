@@ -7,6 +7,9 @@ from datetime import datetime, timedelta
 
 root = tk.Tk()
 
+root.title('Hotel Booking Finder')
+root.iconbitmap('/icon.ico')
+
 s = ttk.Style()
 s.theme_use('clam')
 
@@ -102,7 +105,7 @@ top_frame.place(relx=0.5,
                 relheight=0.15, 
                 anchor = 'n')
 
-title = "HOTEL BOOKINGS"
+title = "HOTEL BOOKING FINDER"
 
 heading = tk.Label(top_frame, 
             bd = 4, 
